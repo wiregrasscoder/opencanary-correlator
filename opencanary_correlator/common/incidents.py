@@ -204,7 +204,7 @@ class Incident(object):
     def _format_report_short(self,):
         """Formatter for SMS notifications"""
         return  \
-            """Canary Incident: {0}. Source {1}. Target {2} ({3}).EXTRA""".format(
+            """Incident: {0}. Source {1}. Target {2} ({3}).EXTRA""".format(
            self.DESCRIPTION,
            self.data['src_host'],
            self.data['node_id'],
